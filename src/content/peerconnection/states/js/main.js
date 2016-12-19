@@ -51,7 +51,8 @@ function start() {
   })
   .then(gotStream)
   .catch(function(e) {
-    alert('getUserMedia() error: ' + e);
+    console.log(e.name);
+    console.log(e.message);
     console.log(e.stack);
   });
 }
